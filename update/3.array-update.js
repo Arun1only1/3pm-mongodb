@@ -81,17 +81,17 @@ use("3pm");
 //     }
 // })
 
-db.students.updateOne(
-  {
-    name: "Ayush",
-  },
-  {
-    $set: {
-      "grades.$[item]": 70,
-    },
-  },
-  {
-    arrayFilters: [{ item: { $gte: 90 } }],
-  }
-);
+// db.students.updateOne(
+//   {
+//     name: "Ayush",
+//   },
+//   {
+//     $set: {
+//       "grades.$[item]": 70,
+//     },
+//   },
+//   {
+//     arrayFilters: [{ item: { $gte: 90 } }],
+//   }
+// );
 db.students.find();
